@@ -4,8 +4,8 @@ import doghome from '../../assets/dog-home.png'
 import React, { useState } from 'react'
 
 import { NewRegistration } from '../NewRegistration/NewRegistration'
-import { Container } from '../../styles/global'
-import { ShowHome } from './styles'
+import { Button, Container, Text1, Text2, Text3, TextLogo } from '../../styles/global'
+import { ContentHome } from './styles'
 
 export const Home = () => {
   const [form, setForm] = useState<boolean>(false)
@@ -14,21 +14,21 @@ export const Home = () => {
     <Container>
       {
         form ? <NewRegistration/>
-        : <ShowHome>
+        : <ContentHome>
             <img src={doghome} alt="Dog" className='dogHome'/>
             <div>
               <img src={logoimg} alt="Petcapitu" className='logo'/>
-              <h1>Olá, somos a <span>Petcapitu</span></h1>
-              <h3>Ficamos muito felizes com sua visita, aproveite e cadastre seu bichinho</h3>
-              <p>Cadastre seu Pet e confira as vantagens de nosso serviço. Atendemos a todo Brasil.</p>
-              <button 
+              <Text1>Olá, somos a <TextLogo>Petcapitu</TextLogo></Text1>
+              <Text2>Ficamos muito felizes com sua visita, aproveite e cadastre seu bichinho</Text2>
+              <Text3>Cadastre seu Pet e confira as vantagens de nosso serviço. Atendemos a todo Brasil.</Text3>
+              <Button 
                 type='button'
                 onClick={(e) => setForm(true)
               }>
                 Cadastre aqui
-              </button>
+              </Button>
             </div>
-          </ShowHome>
+          </ContentHome>
       }
     </Container>
   )
