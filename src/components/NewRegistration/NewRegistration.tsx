@@ -1,10 +1,13 @@
 // import React, { FormEvent, useState } from 'react'
-import { Container } from '../../styles/global'
-import { ShowRegistrationsTable } from '../ShowRegistrationsTable/ShowRegistrationsTable'
-import { PetRegistration } from './styles'
+import logoimg from '../../assets/logo.svg'
+
+import { Container, LabelForm, Logo } from '../../styles/global'
+import { PetRegistration, RegistrationForm } from './styles'
 
 export const NewRegistration = () => {
 //   const [name, setName] = useState<string>('')
+//   const [genderMale, setGenderMale] = useState<boolean>(false)
+//   const [genderFemale, setGenderFemale] = useState<boolean>(false)
 //   const [breed, setBreed] = useState<string>('')
 //   const [age, setAge] = useState<number>()
 //   const [weight, setWeight] = useState<number>()
@@ -26,13 +29,37 @@ export const NewRegistration = () => {
   return (
     <Container>
       <PetRegistration>
-        <input 
-          placeholder='Nome do bichinho'
-          type="text" 
-          // value={name}
-        />
+        <Logo src={logoimg} alt="Petcapitu" className='logo'/>
+          <RegistrationForm>
+            <LabelForm>
+              Nome do bichinho
+              <input 
+                required
+                placeholder='Nome do bichinho'
+                type="text" 
+                // value={name}
+              />
+            </LabelForm>
+            <LabelForm htmlFor='gender'>
+              Sexo
+              <input 
+                name='gender'
+                required
+                placeholder='Macho'
+                type="radio"
+                // value={name}
+              />M
+              <input 
+                name='gender'
+                required
+                placeholder='Fêmea'
+                type="radio" 
+                // value={name}
+              />F
+            </LabelForm>  
+          
+        </RegistrationForm>
       </PetRegistration>
-      <ShowRegistrationsTable/>
     </Container>
   )
 }

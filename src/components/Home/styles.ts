@@ -14,12 +14,6 @@ export const ContentHome = styled.div`
     display: none;
   }
 
-  .logo {
-    display: block;
-    width: 120px;
-    border-radius: 5px;
-  }
-
   @media (min-width: 600px) {
     grid-template-columns: 1fr 1fr;
 
@@ -33,7 +27,7 @@ export const ContentHome = styled.div`
   }
   
   div {
-    padding: 1rem;
+    padding: 1rem ;
     display: flex;
     flex-direction: column;
     align-items: center;
