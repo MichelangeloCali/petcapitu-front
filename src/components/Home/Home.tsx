@@ -4,7 +4,7 @@ import doghome from '../../assets/dog-home.png'
 import React, { useState } from 'react'
 
 import { NewRegistration } from '../NewRegistration/NewRegistration'
-import { Button, Container, Text1, Text2, Text3, TextLogo } from '../../styles/global'
+import { Button, Container, Logo, Text1, Text2, Text3, TextLogo } from '../../styles/global'
 import { ContentHome } from './styles'
 
 export const Home = () => {
@@ -17,7 +17,7 @@ export const Home = () => {
         : <ContentHome>
             <img src={doghome} alt="Dog" className='dogHome'/>
             <div>
-              <img src={logoimg} alt="Petcapitu" className='logo'/>
+              <Logo src={logoimg} alt="Petcapitu" className='logo'/>
               <Text1>Olá, somos a <TextLogo>Petcapitu</TextLogo></Text1>
               <Text2>Ficamos muito felizes com sua visita, aproveite e cadastre seu bichinho</Text2>
               <Text3>Cadastre seu Pet e confira as vantagens de nosso serviço. Atendemos a todo Brasil.</Text3>

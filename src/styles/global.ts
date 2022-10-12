@@ -48,7 +48,7 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: 400;
   }
 
-  h2, h3, h4, h5, h6, strong {
+  h2, h4, h5, h6, strong {
     font-weight: 600;
   }
 
@@ -91,6 +91,7 @@ export const Text1 = styled.h1`
 
 export const Text2 = styled.h3`
   letter-spacing: .2px;
+  font-weight: 600;
   color: var(--text-body);
 `
 
@@ -102,6 +103,16 @@ export const TextLogo = styled.span`
   text-align: center;
   color: var(--text-logo);
   font-size: 2.5rem;
+`
+
+export const LabelForm = styled.label`
+  color: var(--text-body);
+`
+
+export const Logo = styled.img`
+  display: block;
+  width: 120px;
+  border-radius: 5px;
 `
 
 export const Button = styled.button`
