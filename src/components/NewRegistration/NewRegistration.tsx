@@ -6,11 +6,12 @@ import { PetRegistration, RegistrationForm } from './styles'
 
 export const NewRegistration = () => {
 //   const [name, setName] = useState<string>('')
-//   const [genderMale, setGenderMale] = useState<boolean>(false)
-//   const [genderFemale, setGenderFemale] = useState<boolean>(false)
+//   const [type, setType] = useState<string>('')
 //   const [breed, setBreed] = useState<string>('')
+//   const [gender, setGenderMale] = useState<boolean>(false)
 //   const [age, setAge] = useState<number>()
 //   const [weight, setWeight] = useState<number>()
+//   const [createdAt, setCreatedAt] = useState<string>('')
 
 //   const handleCreatePetRegistration = (e: FormEvent) => {
 //     e.preventDefault()
@@ -21,7 +22,7 @@ export const NewRegistration = () => {
 //       weight,
 //     };
 
-//     api.post('/registration', data)
+//     api.post('/registrations', data)
 //   }
 
 
